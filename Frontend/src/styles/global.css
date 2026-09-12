@@ -1,0 +1,202 @@
+/* ==========================================================================
+   SATYA PHYSIOTHERAPY CENTER - HYBRID DARK HERO/FOOTER & LIGHT CONTENT THEME
+   ========================================================================== */
+
+:root {
+  /* Dark Theme Colors (Hero & Footer) */
+  --bg-dark: #080e1e;
+  --bg-dark-elevated: #0d152a;
+  --bg-dark-footer: #050a16;
+
+  /* Light Theme Colors (About, Services, Why Us, Testimonials, CTA) */
+  --bg-light: #ffffff;
+  --bg-light-alt: #f8fafc;
+  --bg-light-mint: #f0fdfa;
+
+  /* Teal Accents Throughout */
+  --teal: #00b493;
+  --teal-hover: #00997d;
+  --teal-glow: rgba(0, 180, 147, 0.2);
+  --teal-light: rgba(0, 180, 147, 0.1);
+
+  /* Dark Text for Light Sections */
+  --text-dark-heading: #0f172a;
+  --text-dark-body: #475569;
+  --text-dark-muted: #64748b;
+
+  /* Light Text for Dark Sections */
+  --text-white: #ffffff;
+  --text-light-body: #cbd5e1;
+  --text-light-muted: #94a3b8;
+
+  /* Borders & Shadows */
+  --border-light: #e2e8f0;
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --shadow-light-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+  --shadow-light-md: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+  --shadow-light-lg: 0 12px 30px -4px rgba(15, 23, 42, 0.1);
+
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  --radius-arch: 220px 220px 0 0;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-dark-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+}
+
+/* Light Section Header Styling */
+.section-header-light {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.section-tag-teal {
+  display: inline-block;
+  font-size: 0.825rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.85rem;
+}
+
+.section-title-dark {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--text-dark-heading);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle-dark {
+  color: var(--text-dark-muted);
+  font-size: 1.1rem;
+}
+
+/* Serif Italic Accent Class */
+.serif-italic-teal {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.85rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-teal {
+  background-color: var(--teal);
+  color: #04101e;
+  box-shadow: 0 4px 20px var(--teal-glow);
+}
+
+.btn-teal:hover {
+  background-color: var(--teal-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--teal-glow);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-white);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn-outline:hover {
+  border-color: var(--text-white);
+  background-color: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  background-color: #ffffff;
+  color: var(--text-dark-heading);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-light-sm);
+}
+
+.btn-outline-dark:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-light-md);
+}
